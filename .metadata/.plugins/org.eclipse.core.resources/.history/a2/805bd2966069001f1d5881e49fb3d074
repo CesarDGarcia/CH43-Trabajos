@@ -1,0 +1,59 @@
+package com.pandevs.pandevs.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pandevs.pandevs.model.User;
+import com.pandevs.pandevs.service.UserService;
+
+@RestController
+@RequestMapping("/api/v1")
+// CORS
+public class UserController  {
+	// Mandamos a llamar a Service
+	private UserService userService;
+	
+	// Inyeccion de dependencias en el constructor
+	@Autowired
+	public UserController(UserService userService) {
+		this.userService = userService;
+	}
+	
+	// Mappear metodos(get, post, put, delete)
+	@GetMapping("/pandelovers")
+	public List<User> getMappingAll(){
+		return userService.getAll();
+		
+	}
+	
+	// Metodo Post que reciba un nuevo objeto y el body del mismo @RequestBody. En Postman tengo que poner el body de la entidad en formato JSON
+	@PostMapping
+	public User newUser(@RequestBody User user) {
+		return userService.createUser(user);
+	}
+	
+	// Mapear método Delete que apunte a un Id específico. Para ello, debemos permitir que el Id sea variable en el endpoint (@PathVariable)
+	@DeleteMapping("/pandelovers/{id}")
+	public void deleteUser(@PathVariable(name = "id") Long id) {
+		userService.deleteUser(id);
+	}
+	
+	// Mapear ,etodo get by Id que apunte a
+	@GetMapping("/pandelovers/{id}")
+	public User getById(@PathVariable(name = "id") Long id) {
+		return userService.getById(id);
+		
+	}
+	
+	
+	
+	
+}

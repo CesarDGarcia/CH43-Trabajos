@@ -1,0 +1,50 @@
+package com.pandevs.pandevs.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pandevs.pandevs.model.User;
+import com.pandevs.pandevs.service.UserService;
+
+@RestController
+@RequestMapping("/api/v1")
+// CORS
+public class UserController  {
+	// Mandamos a llamar a Service
+	private UserService userService;
+	
+	// Inyeccion de dependencias en el constructor
+	@Autowired
+	public UserController(UserService userService) {
+		this.userService = userService;
+	}
+	
+	// Mappear metodos(get, post, put, delete)
+	@GetMapping("/pandelovers")
+	public List<User> getMappingAll(){
+		return userService.getAll();
+		
+	}
+	
+	// Metodo Post que reciba un nuevo objeto y el body del mismo @RequestBody. En Postman tengo que poner el body de la entidad en formato JSON
+	@PostMapping
+	public User newUser(@RequestBody User user) {
+		return userService.createUser(user);
+	}
+	
+	@DeleteMapping
+	public void deleteUser(Long id) {
+		userService.deleteUser(id);
+	}
+	
+	
+	
+	
+}

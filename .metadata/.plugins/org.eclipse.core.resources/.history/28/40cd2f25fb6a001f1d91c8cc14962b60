@@ -1,0 +1,5 @@
+package com.ropa.renueva.exceptions;
+
+public class UserNotFoundException {
+
+}

@@ -1,0 +1,19 @@
+package com.pandevs.pandevs.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pandevs.pandevs.repository.UserRepository;
+
+@Service
+public class UserService {
+	private UserRepository userRepository;
+	
+	//Inyeccion de dependencias en el contructor
+	@Autowired
+	public UserService(UserRepository userRepository) {
+		super();
+		this.userRepository = userRepository;
+	}
+	
+}

@@ -1,0 +1,5 @@
+package org.generation.user.model;
+
+public class User {
+
+}

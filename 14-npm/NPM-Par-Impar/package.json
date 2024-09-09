@@ -1,0 +1,15 @@
+{
+  "name": "cesardg",
+  "version": "1.0.1",
+  "description": "paquete para determinar si un numero es par o impar",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dg"
+  ],
+  "author": "cesar",
+  "license": "ISC"
+}

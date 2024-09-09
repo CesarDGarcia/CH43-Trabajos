@@ -1,0 +1,127 @@
+package com.ropa.renueva.model;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity 
+//preguntar: ¿debemos crear la tabla yml?
+@Table(name = "Usuarios")
+public class User {
+	@Id 
+	@GeneratedValue (strategy= GenerationType.IDENTITY)
+	@Column (name="idUsuario")
+	private Long idUsuario;
+	@Column (name= "Nombre_Usuario", length= 45, nullable= false, unique= false)
+	private String Nombre_Usuario;
+	@Column (name= "email", length= 45, nullable= false, unique= false)
+	private String email;
+	@Column (name= "Telefono", length= 45, nullable= false, unique= false)
+	private String Telefono;
+	@Column (name= "Contraseña", length= 45, nullable= false, unique= false)
+	private String Contraseña;
+	@Column (name= "Direccion", nullable= false, unique= false)
+	private String Direccion;
+	@Column (name= "Metodo_De_Pago", length= 45, nullable= true, unique= false)
+	private String Metodo_De_Pago;
+	@Column (name= "Tipo_De_Usuario", length= 45, nullable= false, unique= false)
+	private String Tipo_De_Usuario;
+	
+	//constructor vacío para JPA
+		public User () {
+			
+		}
+		
+		//constructores
+		public User(Long idUsuario, String nombre_Usuario, String email, String telefono, String contraseña,
+				String direccion, String metodo_De_Pago, String tipo_De_Usuario) {
+			super();
+			this.idUsuario = idUsuario;
+			this.Nombre_Usuario = nombre_Usuario;
+			this.email = email;
+			this.Telefono = telefono;
+			this.Contraseña = contraseña;
+			this.Direccion = direccion;
+			this.Metodo_De_Pago = metodo_De_Pago;
+			this.Tipo_De_Usuario = tipo_De_Usuario;
+		}
+
+		//getters y setters
+
+		public Long getIdUsuario() {
+			return idUsuario;
+		}
+
+		public void setIdUsuario(Long idUsuario) {
+			this.idUsuario = idUsuario;
+		}
+
+		public String getNombre_Usuario() {
+			return Nombre_Usuario;
+		}
+
+		public void setNombre_Usuario(String nombre_Usuario) {
+			Nombre_Usuario = nombre_Usuario;
+		}
+
+		public String getEmail() {
+			return email;
+		}
+
+		public void setEmail(String email) {
+			this.email = email;
+		}
+
+		public String getTelefono() {
+			return Telefono;
+		}
+
+		public void setTelefono(String telefono) {
+			Telefono = telefono;
+		}
+
+		public String getContraseña() {
+			return Contraseña;
+		}
+
+		public void setContraseña(String contraseña) {
+			Contraseña = contraseña;
+		}
+
+		public String getDireccion() {
+			return Direccion;
+		}
+
+		public void setDireccion(String direccion) {
+			Direccion = direccion;
+		}
+
+		public String getMetodo_De_Pago() {
+			return Metodo_De_Pago;
+		}
+
+		public void setMetodo_De_Pago(String metodo_De_Pago) {
+			Metodo_De_Pago = metodo_De_Pago;
+		}
+
+		public String getTipo_De_Usuario() {
+			return Tipo_De_Usuario;
+		}
+
+		public void setTipo_De_Usuario(String tipo_De_Usuario) {
+			Tipo_De_Usuario = tipo_De_Usuario;
+			
+		}
+		//to string
+		@Override
+		public String toString() {
+			return "User [idUsuario=" + idUsuario + ", Nombre_Usuario=" + Nombre_Usuario + ", email=" + email
+					+ ", Telefono=" + Telefono + ", Contraseña=" + Contraseña + ", Direccion=" + Direccion
+					+ ", Metodo_De_Pago=" + Metodo_De_Pago + ", Tipo_De_Usuario=" + Tipo_De_Usuario + "]";
+		}
+		
+	
+}

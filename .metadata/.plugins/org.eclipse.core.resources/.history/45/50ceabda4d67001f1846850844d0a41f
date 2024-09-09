@@ -1,0 +1,5 @@
+package org.generation.user.service;
+
+public class UserService {
+
+}

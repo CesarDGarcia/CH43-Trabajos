@@ -1,0 +1,5 @@
+package com.pandevs.pandevs.repository;
+
+public interface UserRepository {
+
+}

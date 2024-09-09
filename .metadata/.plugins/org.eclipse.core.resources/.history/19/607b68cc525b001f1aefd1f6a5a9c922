@@ -1,0 +1,60 @@
+package org.generation.employee.manager;
+
+import org.generation.employee.Employee;
+
+public class Manager extends Employee{
+
+	// Atributos propios de una Manager
+	private int colaboladores;
+	private float bono;
+	
+	// Constructor. Recibe los atributos de la clase Employee
+	public Manager(String nombre, String apellido, int edad, float salario, String puesto, int colaboladores,
+			float bono) {
+		super(nombre, apellido, edad, salario, puesto);
+		this.colaboladores = colaboladores;
+		this.bono = bono;
+	}
+	
+	// Metodos espesíficos de un manager
+	public void supervisar() {
+		System.out.println("¿Cómo van?");
+		
+	}
+	
+	public void calcularSalario() {
+		float salarioTotal = this.getSalario() + this.bono;
+		System.out.println("El salario del Manager" + this.getNombre() + " " + this.getApellido() + " es de $" + salarioTotal);
+	}
+
+	//getters y setters
+	public int getColaboladores() {
+		return colaboladores;
+	}
+
+	public void setColaboladores(int colaboladores) {
+		this.colaboladores = colaboladores;
+	}
+
+	public float getBono() {
+		return bono;
+	}
+
+	public void setBono(float bono) {
+		this.bono = bono;
+	}
+	
+	@Override
+	public String toString() {
+		return "Manager [colaboradores=" + colaboradores + ", bono=" + bono + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

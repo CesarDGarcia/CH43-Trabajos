@@ -1,0 +1,9 @@
+package org.generation.employee.manager;
+
+import org.generation.employee.Employee;
+
+public class Manager extends Employee{
+	// Atributos propios de una Manager
+	private int colaboladores;
+	private float bono;
+}

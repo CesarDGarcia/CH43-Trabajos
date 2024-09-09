@@ -1,0 +1,29 @@
+package org.generations.controlDeFlujo;
+import java.util.Scanner;
+
+public class ControlDeFlujo {		
+	static void main ( String[] args) {
+	/*
+	 * Scanner. Método de java que me permite solicitar a un usuario cualquier tipo de dato 
+	 * Tenemos que importar la clase Scanner en nuestra clase e instanciar un nuevo objeto de Scanner
+	 * */
+	
+	// 1. Instanciar un objeto de tipo Scanner
+	Scanner scanner = new Scanner(System.in);
+	
+	// 2. Darle contexto al usuario
+	System.out.println("Ingresa tu nombre");
+	
+	// 3. Guardar el objeto Scanner instanciado en una variable, según el tipo de datos que solicitamos
+	String nombre = scanner.next();
+	
+	// 4. Imprimir el valor de la variable nombre
+	System.out.println("Tu nombre es " + nombre);
+	
+	/*
+	 * Control de flujo. Sentencias condicionales.
+	 * 
+	 * */
+
+	}
+}

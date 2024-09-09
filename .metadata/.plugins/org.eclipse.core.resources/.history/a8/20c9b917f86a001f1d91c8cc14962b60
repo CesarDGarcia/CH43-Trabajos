@@ -1,0 +1,30 @@
+package com.ropa.renueva.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ropa.renueva.model.User;
+import com.ropa.renueva.repository.UserRepository;
+
+@Service
+public class UserService {
+	private UserRepository userRepository;
+	// Inyección de dependencias en el constructor
+	 @Autowired
+	 public UserService(UserRepository userRepository) {
+	  super();
+	  this.userRepository = userRepository;
+	 }
+	
+	// Método para obtener todos los usuarios
+	  public List<User> getAll() {
+	   return  userRepository.findAll(); 
+	  }
+	 
+	 
+	 
+	 
+	 
+}

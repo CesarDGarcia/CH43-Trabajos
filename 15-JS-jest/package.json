@@ -1,0 +1,18 @@
+{
+  "name": "15-js-jest",
+  "version": "1.0.0",
+  "description": "Probando Jest para pruebas unitarias",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "unitaria",
+    "jest"
+  ],
+  "author": "cesargd",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

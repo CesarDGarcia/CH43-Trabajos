@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+C:\Users\Cesar\OneDrive\Escritorio\CH43\RR-FullStack\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+529513956.index
+2336463639.index
+3413725848.index
+3918770341.index
+860518908.index
+2767824977.index

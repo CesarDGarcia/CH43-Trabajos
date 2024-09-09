@@ -1,0 +1,23 @@
+package org.generation.employee.manager;
+
+import org.generation.employee.Employee;
+
+public class Manager extends Employee{
+
+	// Atributos propios de una Manager
+	private int colaboladores;
+	private float bono;
+	
+	// Constructor. Recibe los atributos de la clase Employee
+	public Manager(String nombre, String apellido, int edad, float salario, String puesto, int colaboladores,
+			float bono) {
+		super(nombre, apellido, edad, salario, puesto);
+		this.colaboladores = colaboladores;
+		this.bono = bono;
+	}
+	
+	// Metodos espesíficos de un manager
+	
+	
+
+}

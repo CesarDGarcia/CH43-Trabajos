@@ -1,0 +1,125 @@
+[
+    {
+        "nombre": "Felipe",
+        "apellido": "Mejia",
+        "edad": 29,
+        "dulcerFavs": [
+            "chocolates",
+            "chips de pepino",
+            "barras de amaranto"
+        ]
+    },
+    {
+        "nombre": "Cesar",
+        "apellido": "Diaz",
+        "edad": 27,
+        "dulcerFavs": [
+            "chocolates",
+            "gomitas",
+            "nachos"
+        ]
+    },
+    {
+        "nombre": "Jorge",
+        "apellido": "Licea",
+        "edad": 28,
+        "dulcerFavs": [
+            "chips de fuego",
+            "panditas",
+            "cacahuates"
+        ]
+    },
+    {
+        "nombre": "Diego",
+        "apellido": "Torres",
+        "edad": 28,
+        "dulcesFavs": [
+        "frutitas enchiladas",
+        "pelón naranja",
+            "gomitas"
+        ]
+    },
+    {
+        "nombre": "Dani",
+        "apellido": "Luna",
+        "edad": 25,
+        "dulcesFavs": [
+            "chocolates",
+            "gomitas",
+            "helado"
+        ]
+    },
+    {
+        "nombre": "Arturo",
+        "apellido": "Ramirez",
+        "edad": 26,
+        "dulcesFavs": [
+            "Panditas",
+            "Chocolates",
+            "dulces de menta"
+        ]
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "Hernández",
+        "edad": 25,
+        "dulcesFavs": [
+            "picafresa",
+            "gomitas",
+            "tamborsitos"
+        ]
+    },
+    {
+        "nombre": "Johana",
+        "apellido": "Cuevas",
+        "edad": 24,
+        "dulcesFavs": [
+            "chocolates",
+            "Sabritas",
+            "Galletas"
+        ]
+    },
+    {
+        "nombre": "Dilan",
+        "apellido": "Diaz",
+        "edad": 25,
+        "dulcesFavs": [
+            "Chipileta",
+            "Palanqueta",
+            "Cacahuates"
+        ]
+    },
+    {
+        "nombre": "Salvador",
+        "apellido": "Gonzalez",
+        "edad": 29,
+        "dulcerFavs": [
+            "Mazapan",
+            "Kinder Bueno",
+            "Pelon Pelo Rico"
+        ]
+    },
+    {
+        "nombre": "Adrian",
+        "apellido": "Becerra",
+        "edad": 24,
+        "dulcesFavs": [
+            "Paleta a",
+            "Chocolates",
+            "dulces de menta"
+        ]
+    },
+    {
+        "nombre": "Jose",
+        "apellido": "Chimal",
+        "edad": 27,
+        "dulcesFavs": [
+            "Obleas",
+            "Ruflex",
+            "Gatitos de chocolate negro"
+        ]
+    }
+
+    
+]
+
